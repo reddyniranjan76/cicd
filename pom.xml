@@ -15,7 +15,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.3.0-20201013</app.runtime>
-		<mule.maven.plugin.version>3.1.6</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.4.2</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -41,8 +41,7 @@
 					<applicationName>app-cicd</applicationName>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
-					<objectStoreV2>true</objectStoreV2>
-				</cloudHubDeployment>		
+					</cloudHubDeployment>		
 				</configuration>
 				<executions>
 					<execution>
