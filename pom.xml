@@ -21,38 +21,18 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>maven-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.0.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
 				<configuration>
-				<cloudHubDeployment>
-				    <uri>https://anypoint.mulesot.com</uri>;
-					<muleVersion>${app.runtime}</muleVersion>
-					<!-- Deploy User Parameter -->
-					<username>niranjanb</username>
-					<password>Feb@2021</password>
-					<environment>Sandbox</environment>
-					<applicationName>app-cicd</applicationName>
-					<workers>1</workers>
-					<workerType>Micro</workerType>
-					</cloudHubDeployment>		
 				</configuration>
-				<executions>
-					<execution>
-					 <id>deploy</id>
-					 <phase>deploy</phase>
-					 <goals>
-					  <goal>deploy</goal>
-					 </goals>
-				 </execution>
-				 </executions>
-				 </plugin>
+				</plugin>
 		</plugins>
 	</build>
 
