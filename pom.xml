@@ -23,17 +23,17 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
 				    <uri>https://anypoint.mulesot.com</uri>;
-					<muleversion>4.3.0-20201013</muleversion>
+					<muleversion>${app.runtime}</muleversion>
 					<!-- Deploy User Parameter -->
 					<username>niranjanb</username>
 					<password>Feb@2021</password>
